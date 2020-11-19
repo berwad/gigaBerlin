@@ -9,18 +9,16 @@ public class Google extends BasePage {
     private By acceptCookiesBtn = By.cssSelector("#introAgreeButton .RveJvd");
     private By wikiLink = By.xpath("//span[contains(text(),'Wikipedia.org')]");
 
-    public Google() {
+    /*public Google() {
     }
-
-    public Google searchGoogle(String searchText){
+*/
+    public void searchGoogle(String searchText){
         sendKeysToElement(searchField, searchText);
         clickElement(searchBtn);
-        return new Google();
     }
 
-    public Wikipedia clickWiki(){
+    public void clickWiki(){
         clickElement(wikiLink);
-        return new Wikipedia();
     }
 
     public void acceptCookies(){

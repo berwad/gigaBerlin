@@ -11,13 +11,13 @@ public class Wikipedia extends BasePage {
     public static final By coordinates = By.xpath("//tbody/tr[5]/td[1]/span[1]/span[1]/a[1]/span[3]/span[1]");
     public String coordinatesData;
 
-    public Wikipedia() {
+ /*   public Wikipedia() {
     }
-
-    public Wikipedia search(String searchText){
+*/
+    public void search(String searchText){
         sendKeysToElement(searchField, searchText);
         clickElement(searchBtn);
-        return new Wikipedia();
+
     }
 
     public String getCoordinatesData(){
